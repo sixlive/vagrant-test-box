@@ -1,8 +1,8 @@
 #  Vagrant Test Box(s)
-The goal for this box is to be able to provide a generic, multi-purpose, test box(s). One of the primary uses is for local testing of Ansible configurations or multi-server deployment workflows.
+The goal for this configuration is to be able to provide a generic, multi-purpose, test environment. One of the primary uses is for local testing of Ansible configurations or multi-server deployment workflows.
 
 ## User Accounts
-This box automatically creates a local user for your account using the `whoami` comman and it adds your public ssh key from `~/.ssh/id_rsa.pub` to that users `authorized_keys` file.
+This box automatically creates a local user for your account using the `whoami` command and it adds your public ssh key from `~/.ssh/id_rsa.pub` to that users `authorized_keys` file.
 
 ### ⚠️ SSH Host Keys
 To avoid SSH host key collisions it re-uses the same SSH host keys. If there is a collision edit your `~/.ssh/known_hosts` file and search for any of the IP addresses listed in the `Vagrantfile`.
